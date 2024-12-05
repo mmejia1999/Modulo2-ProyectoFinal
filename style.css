@@ -40,11 +40,13 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap:wrap;
     
 
    }
    .nav-links li{
     margin-left: 25px; 
+    margin: 10px;
     border: 1px solid #a8ae96 ;
     border-radius:20%;
     padding-bottom: 10px;
@@ -62,7 +64,7 @@ body{
    /*Estilos de la seccion hero*/
    .hero{
     background-image: url("https://tse3.mm.bing.net/th?id=OIG3.ItVxvb7XIHKdPI8OZl4j&pid=ImgGn");
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -100,25 +102,59 @@ body{
    }
 
    /*Seccion de productos*/
-   .featured-products, .postres, .equipo{
+   .featured-products{
     padding: 50px;
     text-align: center;
-   }
-
-   .product-list{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
+    background-color: aqua;
+
+   }
+
+   .titulo-bestsellers{
+    width: 300px;
+    padding: 30px;
+   }
+   .product-list{
+    padding: 0px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #873e23;
    }
    .product{
-    width: 300px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 500px;
     margin-bottom: 30px;
+    background-color: aliceblue;
+    border-radius:3cqb;
+   }
+   .product h3{
+    padding-block: 5px;
+    font-size: small;
+    color:white;
+    margin-bottom: 10px;
+    background-color:black;
+    border-top-left-radius:3cqb;
+    border-top-right-radius: 3cqb;
    }
    .product img{
-    width: 100%;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
+   }
+
+   .postres, .equipo{
+    padding: 50px;
+    text-align: center;
    }
 
    .grid-container{
