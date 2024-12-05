@@ -16,9 +16,24 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 25px;
     background-color:#4d5953;
 }
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+.logo h1{
+    font-size: 2rem;
+}
+
 .nav-links{
     /*Quitar viñetas*/
     list-style: none;
@@ -29,8 +44,14 @@ body{
 
    }
    .nav-links li{
-    margin-left: 20px; 
-    border-color: #fef5e7;
+    margin-left: 25px; 
+    border: 1px solid #a8ae96 ;
+    border-radius:20%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+
    }
    .nav-links a{
     text-decoration: none;
@@ -46,6 +67,8 @@ body{
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
    }
 
 
@@ -54,6 +77,21 @@ body{
     flex-direction: column;
     align-items: center;
    
+   }
+
+   .hero-content p{
+    padding-bottom: 20px;
+     font-style: italic;
+   }
+   .hero-content button{
+    background-color: #873e23;
+    padding: 10px;
+    border: 2px solid #873e23;
+    border-radius: 15%;
+    color: cornsilk;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+
    }
 
    .hero h2{
