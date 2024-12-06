@@ -335,3 +335,37 @@ body{
     border-radius: 4px;
     cursor: pointer;
    }
+
+   .sandwiches{
+    padding: 50px;
+    text-align: center;
+   }
+
+   .grid-sandwich{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    grid-template-areas:
+    "sandwich1 sandwich1 sandwich2 sandwich3"
+    "sandwich1 sandwich1 sandwich4 sandwich5";
+   }
+
+   .sandwich{
+    border: 1px solid gray;
+    padding: 20px;
+    height: auto;
+   }
+
+   .sandwich img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+   }
+
+   .sandwich:nth-child(1) {grid-area: sandwich1;}
+   .sandwich:nth-child(2) {grid-area: sandwich2;}
+   .sandwich:nth-child(3) {grid-area: sandwich3;}
+   .sandwich:nth-child(4) {grid-area: sandwich4;}
+   .sandwich:nth-child(5) {grid-area: sandwich5;}
