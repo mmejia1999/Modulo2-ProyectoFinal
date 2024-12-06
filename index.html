@@ -7,7 +7,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min">
+    <script src="https://kit.fontawesome.com/50b2073a45.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,10 +18,10 @@
                 <h1>ZEN BEAN</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li> <a href="#">Inicio</a> </li>
+                <li> <a href="#" onclick="redirigir('menu.html')">Menú</a> </li>
+                <li> <a href="#">Nosotros</a> </li>
+                <li> <a href="#">Contacto</a> </li>
             </ul>
         </nav>
     </header>
@@ -37,8 +37,8 @@
     <section class="featured-products">
     
         <div class="titulo-bestsellers">
-            <h2>Nuestros productos destacados</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quas, nostrum sunt totam corrupti deleniti ab dolor nisi tenetur ullam quis? Doloremque quas cupiditate ullam libero nemo, dicta veritatis quae.</p>
+            <h2>BEST SELLERS</h2>
+            <p>Los favoritos de Zen Bean: cada taza, un equilibrio perfecto entre tradición y sabor. Explora nuestros cafés más apreciados, donde cada sorbo combina lo mejor de Oriente y Occidente. Intensos, suaves o cremosos, siempre hay una experiencia única esperando por ti.</p>
         </div>
         <div class="product-list">
             <div class="product">
@@ -52,6 +52,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="descripcion">
+                    <h2>INTENSIDAD: MEDIA-ALTA</h2>
+                    <h2>NOTAS: CHOCOLATE OSCURO</h2>
+                </div>
             </div>
             <div class="product">
                 <h3>BEBIDA CALIENTE</h3>
@@ -64,6 +68,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="descripcion">
+                    <h2>INTENSIDAD: MEDIA</h2>
+                    <h2>NOTAS: CACAO</h2>
+                </div>
             </div>
             <div class="product">
                 <h3>BEBIDA CALIENTE</h3>
@@ -75,6 +83,10 @@
                             <p>Espresso con leche al vapor.</p>
                         </div>
                     </div>
+                </div>
+                <div class="descripcion">
+                    <h2>INTENSIDAD: BAJA-MEDIA</h2>
+                    <h2>NOTAS: LECHE CREMOSA</h2>
                 </div>
             </div>
         </div>
@@ -137,7 +149,7 @@
     <footer>
         <div class="footer-container">
             <div class="social-media">
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
             </div>
@@ -151,6 +163,8 @@
         <p>&copy; 2023 Mi Cafetería</p>
         </div>
     </footer>
-
+    
+    <!--Enlazando archivo de JavaScript-->
+    <script src="main.js"></script>
 </body>
 </html>
