@@ -9,15 +9,26 @@ body{
     font-weight: 400;
     font-style: normal;
     background-color: #cab6a6;
+
 }
 
+header{
+    display: flex;
+    align-items: start;
+}
 
 .navbar{
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 20px;
     background-color:#4d5953;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
 .logo{
     display: flex;
@@ -28,6 +39,7 @@ body{
 .logo img{
     height: 60px;
     margin-right: 10px;
+    margin-left: 20px;
 }
 
 .logo h1{
@@ -38,12 +50,11 @@ body{
     /*Quitar viñetas*/
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-right: 50px;
     display: flex;
     flex-wrap:wrap;
-    
-
    }
+
    .nav-links li{
     margin-left: 25px; 
     margin: 10px;
@@ -63,6 +74,8 @@ body{
 
    /*Estilos de la seccion hero*/
    .hero{
+    margin-top: 100px;
+    width: auto;
     background-image: url("https://tse3.mm.bing.net/th?id=OIG3.ItVxvb7XIHKdPI8OZl4j&pid=ImgGn");
     background-size:cover;
     background-position: center;
@@ -291,14 +304,19 @@ body{
 
    /*Estilos de pie de pagina*/
    footer{
-    background-color: rgb(129, 113, 86);
+    background-color: brown;
     color: antiquewhite;
     text-align: center;
-    padding: 10px 0;
+    padding: 0;
     background-position: end;
+    display: flex;
+    flex-direction: column;
    }
 
    .footer-container{
+    padding: 20px;
+    width: ;
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,6 +353,44 @@ body{
     border-radius: 4px;
     cursor: pointer;
    }
+   
+   .footer-marca{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: ;
+    background-color: #272728;
+   }
+
+ 
+   .lista-politicas{
+    /*Quitar viñetas*/
+    list-style: none;
+    margin: 0;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+   }
+   
+   .lista-politicas li{
+    margin-left: 25px; 
+    margin: 10px;
+    border-left: 1px solid #a8ae96 ;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+   }
+
+   .lista-politicas a{
+    text-decoration: none;
+    color: #a8ae96;
+
+   }
+
+
+   /*--------------------------------------MENU-------------------------------*/
 
    .sandwiches{
     padding: 50px;
