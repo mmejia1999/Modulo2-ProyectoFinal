@@ -122,8 +122,8 @@ header{
    }
 
    /*Seccion de productos*/
-   .featured-products{
-    padding: 50px;
+    .featured-products{
+    padding: 30px;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -316,10 +316,45 @@ header{
    .footer-container{
     padding: 20px;
     width: ;
-    background-color: aqua;
+    background-color: #441e04;
     display: flex;
     flex-direction: column;
     align-items: center;
+   }
+
+   .pre-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: left;
+    
+   }
+
+   .pre-footer li{ 
+    padding-top: 15px;
+    list-style: none;
+   }
+   .pre-footer a{
+    text-decoration: none;
+    color: #a8ae96;
+   }
+   
+   .logo-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+
+   .logo-media h4{
+    padding: 5px;
+    text-align: center;
+    font-size: small;
+   }
+   .logo-media h3{
+    margin-bottom: 40px;
+    padding: 5px;
+    text-align: center;
+    font-size:xx-large;
    }
 
    .social-media{
@@ -331,28 +366,7 @@ header{
     font-size: 24px;
    }
 
-   .newsletter{
-    text-align: center;
-    margin-bottom: 20px;
-   }
-   .newsletter h3{
-    margin-bottom: 20px;
-   }
-   .newsletter input[type="email"]{
-    padding: 8px;
-    border: 2px solid chocolate;
-    border-radius: 4px;
-    margin-bottom: 10px;
-   }
 
-   .newsletter button{
-    background-color: greenyellow;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-   }
    
    .footer-marca{
     display: flex;
@@ -360,6 +374,7 @@ header{
     padding: 20px;
     width: ;
     background-color: #272728;
+    color: #a4a3a4;
    }
 
  
@@ -376,17 +391,21 @@ header{
    .lista-politicas li{
     margin-left: 25px; 
     margin: 10px;
-    border-left: 1px solid #a8ae96 ;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    border-left: 1px solid #a4a3a4 ;
+    padding-bottom: 5px;
+    padding-top: 5px;
     padding-left: 23px;
     padding-right: 23px;
    }
 
    .lista-politicas a{
     text-decoration: none;
-    color: #a8ae96;
+    color: #a4a3a4;
 
+   }
+
+   #primer-politica{
+    border-left: none ;
    }
 
 
