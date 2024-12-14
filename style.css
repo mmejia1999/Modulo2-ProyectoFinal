@@ -23,7 +23,7 @@ header{
     z-index: 1000;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
     background-color:#4d5953;
@@ -56,11 +56,12 @@ header{
    }
 
    .nav-links li{
+    
     position: relative;
     margin-left: 25px; 
-    margin: 0 10px;
     cursor: pointer;
     margin: 10px;
+    padding: 5px;
 
    }
 
@@ -75,7 +76,7 @@ header{
     border-radius: 20px/50%;
     border: 2px solid transparent;
     transition: transform 0.3s ease, border-color 0.3s ease;
-    
+    pointer-events: none;
 }
 
 .nav-links li:hover::before{
@@ -87,14 +88,63 @@ header{
     color: #a8ae96;
     font-size: 1.2rem;
     padding: 10px 20px;
+    
+    
 
+   }
+
+   .nav-buscador{
+    margin: 0;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+   }
+
+   .nav-buscador span{
+    margin-left: 25px; 
+    cursor: pointer;
+    margin: 10px;
+    transform: scale(1.2);
+    border-radius: 20px/50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease-in-out; 
+    
+   }
+
+   .nav-buscador span:hover{
+    background-color: rgba(255, 255, 255, 0.588);
+    color: #a8ae96;
+    cursor:grab;
+    font-weight:bold;
+   }
+
+
+   .nav-buscador a{
+    text-decoration: none;
+    color: 
+    #272728;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+   }
+
+
+
+   .nav-buscador i{
+    color: #a8ae96;
+    font-size: 1.2rem;
+    
    }
 
    /*Estilos de la seccion hero*/
    .hero{
     margin-top: 100px;
     width: auto;
-    background-image: url("https://tse3.mm.bing.net/th?id=OIG3.ItVxvb7XIHKdPI8OZl4j&pid=ImgGn");
+    --opacidad-negro: 0.3;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("https://tse3.mm.bing.net/th?id=OIG3.ItVxvb7XIHKdPI8OZl4j&pid=ImgGn");
     background-size:cover;
     background-position: center;
     text-align: center;
@@ -563,39 +613,4 @@ pointer-events: auto;
    }
 
 
-   /*--------------------------------------MENU-------------------------------*/
-
-   .sandwiches{
-    padding: 50px;
-    text-align: center;
-   }
-
-   .grid-sandwich{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 300px);
-    gap: 20px;
-    grid-template-areas:
-    "sandwich1 sandwich1 sandwich2 sandwich3"
-    "sandwich1 sandwich1 sandwich4 sandwich5";
-   }
-
-   .sandwich{
-    border: 1px solid gray;
-    padding: 20px;
-    height: auto;
-    background-color: rgba(250, 235, 215, 0.655);
-   }
-
-   .sandwich img{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    margin-bottom: 10px;
-   }
-
-   .sandwich:nth-child(1) {grid-area: sandwich1;}
-   .sandwich:nth-child(2) {grid-area: sandwich2;}
-   .sandwich:nth-child(3) {grid-area: sandwich3;}
-   .sandwich:nth-child(4) {grid-area: sandwich4;}
-   .sandwich:nth-child(5) {grid-area: sandwich5;}
+   
