@@ -546,7 +546,16 @@ pointer-events: auto;
    .lista-politicas a{
     text-decoration: none;
     color: #a4a3a4;
+    transition: all 0.4s ease-in-out; 
 
+   }
+
+   .lista-politicas a:hover{
+    color: whitesmoke;
+    transform: scale(1.05);
+    cursor:grab;
+    font-weight:bold;
+    text-shadow: 0 10px 10px rgba(0,0,0,0.2);
    }
 
    #primer-politica{
