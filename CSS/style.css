@@ -331,45 +331,9 @@ header{
     position: absolute;
    }*/
 
-   .postres, .equipo{
-    padding: 50px;
-    text-align: center;
-   }
 
-   .grid-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 30px; /*Espaciado*/
-   }
 
-   .postre img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-   }
-
-   .equipo{
-    background-color: antiquewhite;
-   }
-
-   .equipo-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-   }
-
-   .miembro{
-    width: 200px;
-    margin-bottom: 35px;
-   }
-
-   .miembro img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-   }
-
+  8FD
 
 
    /*Estilos de pie de pagina*/

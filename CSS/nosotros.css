@@ -146,3 +146,29 @@
   color: #fea116;
   text-align: center;
 }
+
+
+
+.equipo{
+  background-color: antiquewhite;
+  padding: 50px;
+  text-align: center;
+ }
+
+ .equipo-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ }
+
+ .miembro{
+  width: 200px;
+  margin-bottom: 35px;
+ }
+
+ .miembro img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+ }
