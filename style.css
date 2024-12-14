@@ -56,19 +56,37 @@ header{
    }
 
    .nav-links li{
+    position: relative;
     margin-left: 25px; 
+    margin: 0 10px;
+    cursor: pointer;
     margin: 10px;
-    border: 1px solid #a8ae96 ;
-    border-radius:20%;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 23px;
-    padding-right: 23px;
 
    }
+
+   .nav-links li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    border-radius: 20px/50%;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    
+}
+
+.nav-links li:hover::before{
+    transform: scale(1.2);
+    border-color: #a8ae96;
+}
    .nav-links a{
     text-decoration: none;
     color: #a8ae96;
+    font-size: 1.2rem;
+    padding: 10px 20px;
 
    }
 
@@ -84,6 +102,7 @@ header{
     padding: 100px;
     padding-top: 150px;
     padding-bottom: 150px;
+    text-shadow: 0 10px 10px rgba(0,0,0,0.7);
    }
 
 
@@ -111,9 +130,10 @@ header{
    }
 
    .hero-content button:hover{
-    background-color: #873e23;
+    background-color: #884730b7;
     transform: scale(1.05);
     cursor:grab;
+    font-weight:bold;
    }
 
    .hero h2{
@@ -323,9 +343,9 @@ header{
    }
 
    .pre-footer{
-    
+    margin: 20px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 340px repeat(4, 1fr);
     gap: 20px;
     text-align: left;
     color: white;
@@ -338,20 +358,41 @@ header{
    .pre-footer a{
     text-decoration: none;
     color: #a8ae96;
+    transition: all 0.4s ease-in-out; 
    }
+
+   .pre-footer a:hover{
+    color: #4d5953;
+    transform: scale(1.05);
+    cursor:grab;
+    font-weight:bold;
+    text-shadow: 0 10px 10px rgba(0,0,0,0.2);
+   }
+
+
+
    
    .logo-media{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
    }
 
    .logo-media .logo{
+
     color:#4d5953;
     text-shadow: 0 10px 10px rgba(0,0,0,0.4);
    }
-   .logo-media .logo img
+   .logo-media .logo img{
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 2));
+   }
 
+   .logo-media h1{
+    font-size: 2rem;
+    
+   }
 
 
    .logo-media h4{
