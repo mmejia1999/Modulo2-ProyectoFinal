@@ -1,8 +1,14 @@
+
+.nosotros{
+  display: flex;
+  justify-content: center;
+}
 .col-container {
-    font-family: "Heebo", sans-serif;
-   width: 100vw;
+  font-family: "Heebo", sans-serif;
+   width: 90vw;
    margin-top: 4%;
    display: flex;
+   margin: 30px;
   }
   
 .about-us{
@@ -12,7 +18,7 @@
   font-style: bold;
   font-size: 50px;
   color: #fea116;
-  text-align: center;
+  background-color: transparent;
 }
 
 .welcome{
@@ -37,11 +43,13 @@
   width: 50%;
   margin-top: 1rem;
   margin-left: 15rem;
+  display:flex;
+  align-items: center;
 }
 
 .right-part-data{
   display: flex;
-  gap: 50px;
+  gap: 30px;
   flex-direction: column;
 }
 .img-utensil{
@@ -51,6 +59,7 @@
 .experience{
   display: flex;
   font-size: 40px;
+  
 }
 
 .master-chef{
@@ -58,7 +67,7 @@
   font-size: 40px;
 }
 .text-part{
-  margin-left: 35px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -66,78 +75,45 @@
   color: gray;
 }
 .num{
-  width: 30px;
+  text-align: center;
+  width: 180px;
   margin-right: 100px;
   color: #fea116;
   font-weight: bold;
   font-size: 70px;
+  transition: 0.6s ease-in-out;
+  
 }
 
-.booking-btn1 {
+.num:hover{
   color: white;
-  width: 350px;
-  background-color: #fea116;
-  
+  transform: scale(1.2);
+}
+
+.origenes{
+  height: 40vh;
+  width: 90vw;
+}
+
+.origenes img{
+  height: 100%;
+  text-align: center;
+  width: 99vw;
+  object-fit: cover;
+}
+
+
+
+
+
+/* Aplicamos los estilos de team-container a la sección equipo */
+.equipo {
+  background-color: antiquewhite;
   padding: 20px;
-  border: none;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
+  text-align: center;
 }
 
-.booking-btn1:hover {
-  cursor: pointer;
-  color: #fea116;
-  background-color: white;
-  border: 3px solid #fea116;
-}
-
-/* team part css */
-.team-container{
-  margin-bottom: 5%;
-  height: 90vh;
-  width: 100%;
-}
-.our-master-chef{
-  justify-content: center;
-  font-family: "Rubik", sans-serif;
-  font-weight: bold;
-  font-size: 35px;
-  margin-left: 40%;
-  margin-bottom: 4%;
-
-
-}
-.team-introduction {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 24%;
-}
-
-.member {
-  height: 350px;
-  width: 250px;
-  padding: 2%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8)
-  
-}
-
-.chef-img {
-  height: 250px;
-  border-radius: 50%;
-  transition: height 0.5s ease;
-}
-
-.member:hover .chef-img {
-  height: 300px;
-}
-.heading-part{
-  margin: 12px;
-  padding: 15px;
+.heading-part {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -147,28 +123,48 @@
   text-align: center;
 }
 
-
-
-.equipo{
-  background-color: antiquewhite;
-  padding: 50px;
-  text-align: center;
- }
-
- .equipo-container{
+.equipo-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
- }
+}
 
- .miembro{
+.miembro {
+  height: 300px;
+  width: 250px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.miembro h3{
+  margin-top: 20px;
+  font-size: x-large;
+}
+
+.miembro p{
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.chef-img {
+  height: 250px;
+  border-radius: 50%;
+  transition:  0.5s ease;
+}
+
+.miembro:hover .chef-img {
+  height: 200px;
   width: 200px;
-  margin-bottom: 35px;
- }
+}
 
- .miembro img{
+.miembro img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
- }
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
