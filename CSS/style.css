@@ -139,7 +139,7 @@ header{
     
    }
 
-   /*Estilos de la seccion hero*/
+   /*********************Estilos de la seccion hero*/
    .hero{
     margin-top: 100px;
     width: auto;
@@ -191,7 +191,7 @@ header{
     margin-bottom: 20px;
    }
 
-   /*Seccion de productos*/
+   /*****************************Seccion de BestSellers**/
     .featured-products{
     padding: 30px;
     text-align: center;
@@ -332,11 +332,133 @@ header{
    }*/
 
 
+ /******************Seccion de testimonios******/
+.testimonials {
+    padding: 80px 20px;
+    background: linear-gradient(to left, #b94c58, #efc4c0);
+    color: #fff;
+    text-align: center;
+}
 
-  8FD
+.testimonials h2 {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.testimonials i {
+    font-size: 120px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item p {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.carousel-item h5 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.social-client {
+    margin-bottom: 25px;
+}
+
+.social-client a {
+    color: #4e4d4d;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-client a:hover {
+    color: #b94c58;
+    transform: scale(1.2);
+}
+
+.social-client i {
+    font-size: 24px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-indicators {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicators div {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: #b94c58;
+}
 
 
-   /*Estilos de pie de pagina*/
+
+
+
+
+
+
+
+
+   /******************Estilos de pie de pagina******/
    footer{
     background-color: brown;
     color: antiquewhite;
