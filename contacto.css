@@ -4,8 +4,9 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    
 }
+
 
 /*Estilos de la seccion hero*/
 .hero-contacto{
@@ -39,7 +40,7 @@
    .hero-content-contacto p{
     width: 50%;
     padding-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New';
     font-weight: bold;
     font-size:large;
    }
@@ -54,6 +55,7 @@
 
 
 .sandwiches {
+    font-family: 'Montserrat', sans-serif;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -87,6 +89,7 @@
     display: flex;
     flex-direction: column;
     gap:25px
+    
 }
 
 .data > p {
